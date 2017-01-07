@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>izayacity</title>
+        <meta name="description" content="Personal Website of Francis Yang">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./static/img/logo.png">
+
+        <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./static/css/syntax.css">
+        <link rel="stylesheet" href="./static/css/main.css">
+        <link href="./static/css/jquery.terminal.css" rel="stylesheet"/>
+
+        <!-- OG meta -->
+        <meta property="og:title" content="izayacity">
+        <meta property="og:type" content="website">
+        <style>
+
+    p, h1, h2, h3, h4 {
+        color: white;
+    }
+    #term_demo {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #aaa;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .terminal, .cmd, .terminal-output > div {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: #00ff00;
+        background-color: black;
+        font-size: 16px;
+        min-height: 25px;
+    }
+
+    header#main {
+        height: 130px;
+    }
+
+    .terminal .terminal-output div div, .cmd .prompt {
+        display: block;
+        line-height: 25px;
+        height: auto;
+    }
+
+    .terminal, .cmd {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    </style>
+    </head>
+
+    <body id="home">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a href="./index.html" class="navbar-brand">izayacity</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="">
+                  <a href="./about.html" class="navbar-brand active">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <section class="perso">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3> My resume is in the terminal below! If you don't want to mess around with the terminal, click
+                  <button type="button" class="btn btn-primary" onclick="window.open('./francis_cv.pdf')">HERE
+                  </button> to get a PDF version of my <b>RESUME</b>. Here are the recommendation letters from
+                  <button type="button" class="btn btn-primary" onclick="window.open('./toon-rl.pdf')">Toon
+                  </button> Kikaku Co.Ltd,
+                  <button type="button" class="btn btn-primary" onclick="window.open('./nsfocus-rl.pdf')">Nsfocus
+                  </button> Co.Ltd, and recommendation letter from my undergraduate university
+                  <button type="button" class="btn btn-primary" onclick="window.open('./bupt-rl.pdf')">BUPT
+                  </button>
+              </h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="expectations">
+    <div class="container">
+        <div class="row contact">
+            <div class="col-md-12">
+                <div id="term_demo"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row contact">
+            <div class="col-md-11 col-md-offset-2">
+                Don't hesitate to contact me at <a href="mailto:ajehanne@gmail.com">izayacity@gmail.com</a> or <a href="mailto:xyang42@ucsc.edu">xyang42@ucsc.edu</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer>
+          <div class="container-fluid">
+            <div class="row footer">
+              <div class="col-md-12">
+                <p>
+                  <a href="https://github.com/izayacity">Github</a> |
+                  <a href="https://twitter.com/izayacity">Twitter</a> |
+                  <a href="http://www.linkedin.com/in/izayacity">Linkedin</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script async="" src="./static/js/analytics.js"></script><script src="./static/js/jquery.min.js"></script>
+        <script src="./static/js/bootstrap.min.js"></script>
+        <script src="./static/js/jquery.terminal-0.9.3.min.js"></script>
+        <script src="./static/js/unix_formatting.js"></script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-52977462-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <script>
+            var lines = "<h4 style='text-align:left;color:crimson;'>---------------------------------</h4>";
+            var skills = "<h3 style='text-align: left; color:darkgoldenrod;'>Programming Languages: " +
+                    "<span style='color:green;font-size:16px;'>C++, python, PHP, JavaScript, Golang, Swift, Java;</span></h3><h3 style='text-align: left; color:darkgoldenrod;'>Frameworks: " +
+                    "<span style='color:green;font-size:16px;'>Unity, Unreal Engine 4, SFML, Django, jQuery, Slim, QT, Snort, Bootstrap, Ionic, AngularJS, threeJS;</span></h3><h3 style='text-align: left; color:darkgoldenrod;'>Others: "+
+                    "<span style='color:green;font-size:16px;'>Linux, Mysql, SQL Server, Google Datastore, Memcache, GAE, AWS, RESTful APIs, Ajax, Wireshark, UML(MS Visio), Agile(Atlassian Jira)...</span></h3>";
+
+            var others = "<h3 style='text-align: left; color:darkgoldenrod;'>Languages: "+
+                    "<span style='color:green;font-size:16px;'>Chinese(native), English(fluent), Japanese(JLPT N3)</span></h3><h3 style='text-align: left; color:darkgoldenrod;'>Certifications: "+
+                    "<span style='color:green;font-size:16px;'>languages, cooking, programming, soccer, hiking, biking, photography, go, gaming, anime, Manchester United, Golden State Warriors</span></h3>";
+
+            var edu =   "<h3 id='termHeader' >UC Santa Cruz (UCSC)</h3>"+
+                        "<h4 id='termHeader'>Major in Games and Playable Media at Jack Baskin School of Engineering</h4>"+
+                        "<h4 id='termHeader'>Sep, 2016 to Aug, 2017, Master of Science</h4><br/>"+
+                        "<h3 id='termHeader' >Beijing University of Posts and Telecommunications (BUPT)</h3>"+
+                        "<h4 id='termHeader'>Major in Network Engineering at School of Conputer Science</h4>"+
+                        "<h4 id='termHeader'>Sep, 2011 to Jul, 2015, Bachelor of engineering</h4>";
+
+            var experience = "<h3 id='termHeader' style='color:darkgoldenrod !important;'> Experiences ( list only, with [.d] for details )</h3>" +
+                    "<ul style='text-align: left;'><li>Intern at To-on Kikaku Co.Ltd (AIESEC global internship program)</li>"+
+                    "<li>Intern at Nsfocus Headquater</li>"+
+                    "<li>Trainee at ZTE Corporation</li>" +
+                    "<li>Vice minister at Public Relations Department of Red Cross Association</li>" +
+                    "<li>Volunteer at Beijing Gehua Group in Beijing Design Week</li>"+
+                    "<li>Lab Assistant of Network and Information Security Lab of Tsinghua University</li>"+
+                    "<li>Academic Assistant of Class</li></ul>";
+
+            var experienceDetail = "<table id='cmdTable'>"+
+                            "<tr id='cmdTable'><td id='cmdCol1'>Intern at To-on Kikaku Co.Ltd (AIESEC global internship program)<br><br><h5>Tokyo, Japan</h5><h5>Nov,2015 - Feb,2016</h5></td>" +
+                    "<td id='cmdCol2'><ul style='text-align: left;'><li>Cooperated in developing lesson-time.com and HTML5 app using Ionic framework and RESTful designed APIs;</li>" +
+                    "<li>Developed server management system individually using Slim and Bootstrap framework;</li>" +
+                    "<li>Visualized data in Google Datastore and optimized it within a second through Memcache and Go script.</li></ul></td></tr>" +
+
+                    "<tr id='cmdTable'><td id='cmdCol1'>Intern at Nsfocus Headquater<br><br><h5>Beijing, China</h5><h5>Nov,2014 - Apr,2015</h5></td>" +
+                    "<td id='cmdCol2'><ul style='text-align: left;'>LMS (Lab Management System) Develop Project<ul style='text-align: left;'><li>Developed charging management module under Django MVC framework;</li>"+
+                    "<li>Developed dialog and time handling module using jQuery.</li></ul></td>" +
+
+                    "<td id='cmdCol2'><ul style='text-align: left;'>IPS Testing and Develop Project<ul style='text-align: left;'><li>Tested and submitted bugs of IPS every week, and made tech reports;</li>"+
+                    "<li>Made testing statistics using Python scripts. e.g. Checked 7000 rules’ correctness within 3 days;</li>" +
+                    "<li>Developed application configure module using C++ and python.</li></ul></td>"+
+
+                    "<td id='cmdCol2'><ul style='text-align: left;'>IPS Research based on Snort<ul style='text-align: left;'><li>Built Snort, used Barnyard2 to put alert records into Mysql database, and built BASE front end;</li>"+
+                    "<li>Wrote and Tested Snort rules using IDS model;</li>"+
+                    "<li>Developed modules using Netfilter to control Iptables to filter alert packages, making it as an IPS.</li></td></tr></ul>"+
+
+                    "<tr id='cmdTable'><td id='cmdCol1'>Trainee at ZTE Corporation<br><br><h5>Beijing, China</h5><h5>Sep,2014 - Oct,2014</h5></td>" +
+                    "<td id='cmdCol2'><ul style='text-align: left;'><li>Configured and designed topology structure of Network Element for TDS-CDMA and TD-LTE on device eNodeB8300 using Unitrans ZXONM E300 Network Management System;</li>" +
+                    "<li>Assembled and configured panels to ensure frame synchronization of Ethernet service on SDH device using ZXSDR OMMB Operation and Maintenance Center</li></ul></td></tr>"+
+
+                    "<tr id='cmdTable'><td id='cmdCol1'>Vice minister at Public Relations Department of Red Cross Association<br><br><h5>Sep,2011 - Jul,2012</h5></td>" +
+                    "<td id='cmdCol2'><ul style='text-align: left;'><li>Organized blood donations, held emergency trainings and communicated with other universities;</li>" +
+                    "<li>Was awarded 3rd prize in the Red Cross Knowledge Competition held by BUAA in June, 2012</li></td></tr>"+
+
+                    "<tr id='cmdTable'><td id='cmdCol1'>Volunteer at Beijing Gehua Group in Beijing Design Week<br><br><h5>Sep,2012 - Oct,2012</h5></td>"+
+                    "<td id='cmdCol2'>Guided foreign tourists with English, decorated and cleaned up venues, photographed and uploaded photos to official websites</td></tr> " +
+
+                    "<tr id='cmdTable'><td id='cmdCol1'>Lab Assistant of Network and Information Security Lab in Tsinghua University<br><br><h5>Sep,2012 - Dec,2012</h5></td>" +
+                    "<td id='cmdCol2'><ul style='text-align: left;'><li>Built and developed synchronization module on Owncloud under CentOS;</li><li>Configured firewall with SSH and maintained MySQL database;</li><li>Localized and debugged XML files under TYPO3 Framework</li></ul></td></tr>"+
+
+                    "<tr id='cmdTable'><td id='cmdCol1'>Academic Assistant of Class<br><br><h5>Mar,2013 - Mar,2014</h5></td>"+
+                    "<td id='cmdCol2'>Coordinated between faculties and students, improved teachers' efficiency of processing assignments and helped classmates about their academic questions</td></tr>";
+            var contact = "<h2 id='termHeader' style='color:purple !important;'> Contact Information</h2>" +
+                        "<h4 id='termHeader' style='color:crimson !important;'> Email1 : <span style='color:green !important;'>xyang42@ucsc.edu</span> </h4>" +
+                        "<h4 id='termHeader' style='color:crimson !important;'> Email2 : <span style='color:green !important;'>izayacity@gmail.com</span> </h4>" +
+                        "<h4 id='termHeader' style='color:crimson !important;'> TEL : <span style='color:green !important;'>+1(669)264-9019</span></h4>";
+
+            var temp = "<h2 id='termHeader' style = 'color:purple !important;'> Work and Leadership Experience </h2>";
+            var eduHeader = "<h2 id='termHeader' style = 'color:purple !important;'> Education </h2>";
+
+            jQuery(function($, undefined) {
+                $('#term_demo').terminal(function(command, term) {
+                    if (command.toLowerCase() == "help") {
+                        term.echo("francisyang.resume -- prints the entire resume"); term.echo('');
+                        term.echo("francisyang.experience -- prints out every recent company I have worked at"); term.echo('');
+                        term.echo("francisyang.experience.[d , l] -- d for detail, l for list of experiences");
+                        term.echo('');
+                        term.echo("francisyang.skills -- prints all my relevant skills and technical abilities");
+                        term.echo('');
+                        term.echo("francisyang.edu -- prints out my educational background");
+                        term.echo('');
+                        term.echo("francisyang.contact -- prints out my contact information so you can get in touch with me!");
+                        term.echo("francisyang.others -- prints out further details about me");
+                        term.echo('');
+                        term.echo("clear -- This will clear the terminal!");
+                    }
+                    else if (command.toLowerCase() == "francisyang.skills") {
+                        x = document.getElementsByClassName("terminal-output")[0];
+                        z = x.innerHTML;
+                        x.innerHTML = z + skills;
+                    }
+                    else if (command.toLowerCase() == "francisyang.experience" || command.toLowerCase() == "francisyang.experience.l") {
+                        x = document.getElementsByClassName("terminal-output")[0];
+                        z = x.innerHTML;
+                        x.innerHTML = z + experience;
+                    }
+                    else if (command.toLowerCase() == "francisyang.experience.d") {
+                        x = document.getElementsByClassName("terminal-output")[0];
+                        z = x.innerHTML;
+                        x.innerHTML = z + experienceDetail+ "</table>";
+                    }
+
+                    else if (command.toLowerCase() == "francisyang.contact") {
+                        x = document.getElementsByClassName("terminal-output")[0];
+                        z = x.innerHTML;
+                        x.innerHTML = z + contact;
+                    }
+                    else if (command.toLowerCase() == "francisyang.edu") {
+                        x = document.getElementsByClassName("terminal-output")[0];
+                        z = x.innerHTML;
+                        x.innerHTML = z + eduHeader + edu;
+                    }
+                    else if (command.toLowerCase() == "francisyang.others") {
+                        x = document.getElementsByClassName("terminal-output")[0];
+                        z = x.innerHTML;
+                        x.innerHTML = z + others;
+                    }
+                    else if (command.toLowerCase() == "francisyang.resume") {
+                        x = document.getElementsByClassName("terminal-output")[0];
+                        z = x.innerHTML;
+                        var resumeHeader = "<h1 id='termHeader' style = 'color: #c62981 !important;'> Francis Yang's resume! </h1>";
+                        x.innerHTML = z + resumeHeader + eduHeader + edu + lines + experience + lines + skills + others + lines + contact;
+                    }
+
+                    else if (command !== '') {
+                        try {
+                            var result = window.eval(command);
+                            if (result !== undefined) {
+                                term.echo(new String(result));
+                            }
+                        } catch(e) {
+                            term.error("Sorry, that command is not recognized. Type help to check out command syntax");
+                        }
+                    }
+                }, {
+                    greetings: 'To see how to use the terminal, simply type in "help" and click enter!\nIf the screen is cluttered, type in "clear".\nYou can also use it as a JavaScript console with jQuery loaded already.\neg. To pop up a window, type alert("YES")',
+                    name: 'js_demo',
+                    height: 768,
+                    width: 1024,
+                    prompt: '$> '});
+            });
+
+        </script>
+
+<div id="cntvlive2-is-installed"></div></body></html>
