@@ -331,7 +331,7 @@ ul#nav li.current a { color: #F06000; }
     -webkit-animation: python 2s ease;
 }
 .php {
-  	width: 70%;
+  	width: 55%;
   	-moz-animation: matlab 2s ease;
   	-webkit-animation: matlab 2s ease;
 }
@@ -341,12 +341,12 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: microsoft 2s ease;
 }
 .javascript {
-  	width: 75%;
+  	width: 70%;
   	-moz-animation: sas 2s ease;
   	-webkit-animation: sas 2s ease;
 }
 .unity {
-  	width: 75%;
+  	width: 65%;
   	-moz-animation: latex 2s ease;
   	-webkit-animation: latex 2s ease;
 }
@@ -355,10 +355,15 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: latex 2s ease;
   	-webkit-animation: latex 2s ease;
 }
-.other {
-  	width: 50%;
+.golang {
+  	width: 70%;
   	-moz-animation: other 2s ease;
   	-webkit-animation: other 2s ease;
+}
+.java {
+    width: 60%;
+    -moz-animation: other 2s ease;
+    -webkit-animation: other 2s ease;
 }
 
 @-moz-keyframes photoshop {
