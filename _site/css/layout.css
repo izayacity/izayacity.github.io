@@ -326,17 +326,17 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .cpp {
-    width: 75%;
+    width: 50%;
     -moz-animation: python 2s ease;
     -webkit-animation: python 2s ease;
 }
 .php {
-  	width: 55%;
+  	width: 50%;
   	-moz-animation: matlab 2s ease;
   	-webkit-animation: matlab 2s ease;
 }
 .linux {
-  	width: 50%;
+  	width: 70%;
   	-moz-animation: microsoft 2s ease;
   	-webkit-animation: microsoft 2s ease;
 }
@@ -346,7 +346,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: sas 2s ease;
 }
 .unity {
-  	width: 65%;
+  	width: 50%;
   	-moz-animation: latex 2s ease;
   	-webkit-animation: latex 2s ease;
 }
@@ -356,14 +356,19 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: latex 2s ease;
 }
 .golang {
-  	width: 70%;
+  	width: 80%;
   	-moz-animation: other 2s ease;
   	-webkit-animation: other 2s ease;
 }
 .java {
-    width: 60%;
+    width: 90%;
     -moz-animation: other 2s ease;
     -webkit-animation: other 2s ease;
+}
+.python {
+   width: 70%;
+   -moz-animation: other 2s ease;
+   -webkit-animation: other 2s ease;
 }
 
 @-moz-keyframes photoshop {
